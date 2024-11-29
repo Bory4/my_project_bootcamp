@@ -19,17 +19,17 @@ getChat()
 </script>
 
 <template>
-  <main>
+  <main class="container mx-auto flex justify-center items-center flex-col p-6 border-2 border-cyan-700 my-6 w-fit rounded-xl">
     <img src="/logo2.svg" alt="DFINITY logo" />
     <br />
     <br />
     <form action="#" @submit="handleSubmit">
       <label for="msg">Enter your message: &nbsp;</label>
       <input id="msg" alt="msg" type="text" />
-      <button type="submit">Click Me!</button>
+      <button type="submit" class="">Click Me!</button>
     </form>
-    <section id="displayChat">
-      <div v-for="msg in displayChat">
+    <section id="displayChat" class="w-full">
+      <div v-for="msg in displayChat" class="flex justify-start ">
         {{ msg }}
       </div>
     </section>
